@@ -1,4 +1,5 @@
 find_package(Threads REQUIRED)
+find_package(boost REQUIRED)
 # find_package(crc REQUIRED)
 
 file(GLOB_RECURSE ALL_BENCH_CPP *.cpp)
@@ -18,6 +19,7 @@ foreach(ONE_BENCH_CPP ${ALL_BENCH_CPP})
    target_link_libraries(${TARGET_NAME}
          benchmark
          crc
+         boost::boost
      ${CMAKE_THREAD_LIBS_INIT}
     )
 endforeach()

@@ -31,6 +31,5 @@ add_compile_options("-Wall" "-Wextra" "-Werror" "$<$<CONFIG:RELEASE>:-O3>")
 # do not build tests of benchmarking lib
 set(BENCHMARK_ENABLE_TESTING OFF CACHE BOOL "Suppressing benchmark's tests" FORCE)
 add_subdirectory(vendor/google/benchmark)
-add_subdirectory(vendor/google/googletest/googletest)
 add_subdirectory(vendor/lokraszewski/cpp-crc)
 add_subdirectory(${PROJECT_NAME})
