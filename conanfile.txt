@@ -1,7 +1,11 @@
 [requires]
+zlib/1.2.11@conan/stable
 boost/1.68.0@conan/stable
+
 
 [generators]
 cmake_find_package
 
 [options]
+zlib:shared=True # False
+zlib:fPIC=True # False
