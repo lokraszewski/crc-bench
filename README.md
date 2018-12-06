@@ -1,4 +1,4 @@
-# crc-bench
+# crc-bench [![Build Status](https://travis-ci.com/lokraszewski/crc-bench.svg?branch=master)](https://travis-ci.com/lokraszewski/crc-bench)
 Benchmarking the following crc engines:
 * [lokraszewski/cpp-crc](https://github.com/lokraszewski/cpp-crc)
 * [boost crc](https://www.boost.org/doc/libs/1_64_0/libs/crc/)
