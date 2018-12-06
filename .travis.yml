@@ -69,6 +69,7 @@ script:
   - cmake -DCMAKE_BUILD_TYPE=$BUILD_TYPE .. && make
 
 cache:
+  apt: true
   directories:
     - $HOME/.cache/pip
     - $HOME/.conan/data
