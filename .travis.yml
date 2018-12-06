@@ -65,5 +65,5 @@ install:
 
 script:
   - mkdir build && cd build
-  - conan install .. --build
+  - conan install .. --build missing
   - cmake -DCMAKE_BUILD_TYPE=$BUILD_TYPE .. && make
